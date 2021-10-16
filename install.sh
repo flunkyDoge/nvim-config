@@ -21,6 +21,7 @@ if test -f '/etc/arch-release'; then
 elif test -f '/etc/debian_version'; then
   echo "Package manager detected: apt-get"
   install=$'sudo apt-get install'
+  noconfirm=$'-y'
   sudo apt-get upgrade
   echo
 elif test -f '/etc/redhat-release'; then
