@@ -77,7 +77,5 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('folke/persistence.nvim')
     -- Passwordstore
     Plug('fourjay/vim-password-store')
-    -- Spell checking
-    Plug('dpelle/vim-LanguageTool')
 
 vim.call('plug#end')
