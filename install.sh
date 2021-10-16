@@ -45,7 +45,7 @@ if test -f '/usr/bin/nvim'; then
 else
   question='Neovim is not installed, would you like to install it with required dependencies (fd, lua, lolcat, ranger) now?'
   abort='Neovim and dependencies'
-  $install git neovim fd lua lolcat ranger $noconfirm
+  $install $noconfirm git neovim fd lua lolcat ranger
   echo ''
 fi
 # Detects if npm is installed
