@@ -12,7 +12,6 @@ vim.cmd[[
 
 -- Import remaining lua files
 require('autocomplete')
-require('plugins')
 require('terminal')
 require('dashboard')
 require('settings')
