@@ -55,7 +55,7 @@ if test -f '/usr/bin/npm'; then
 else
   question='npm is not installed, would you like to install it now? [Y/n]'
   abort='npm'
-  $install npm $noconfirm
+  $install npm $noconfirm > /dev/null
 fi
 
 # Installs language servers
