@@ -20,14 +20,14 @@ if test -f '/etc/arch-release'; then
   echo "Package manager detected: pacman"
   install=$'sudo pacman -S'
   noconfirm=$'--noconfirm'
-  sudo pacman -Syu --noconfirm
+  sudo pacman -Syu --noconfirm > /dev/null
   echo
 elif test -f '/etc/debian_version'; then
   echo "Package manager detected: apt-get"
   install=$'sudo apt-get install'
   noconfirm=$'-y'
   fd=$fdclone
-  sudo apt-get update
+  sudo apt-get upgrade > /dev/null
   echo
 elif test -f '/etc/redhat-release'; then
   echo "Package manager detected: yum"
@@ -45,7 +45,7 @@ fi
 
 question='Neovim is not installed, would you like to install it with required dependencies (fd, lua, lolcat, ranger) now?'
 abort='Neovim and dependencies'
-$install $noconfirm git neovim $fd lolcat ranger
+$install $noconfirm git neovim $fd lolcat ranger > /dev/null
 echo
 
 # Detects if npm is installed
@@ -60,7 +60,7 @@ fi
 
 # Installs language servers
 echo 'Installing required language servers'
-sudo npm i pyright bash-language-server
+sudo npm i pyright bash-language-server > /dev/null
 echo
 
 # Here begins the installation of the actual config
