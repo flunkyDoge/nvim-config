@@ -65,7 +65,7 @@ echo
 if test -f '~/.config/nvim'; then
   question='Neovim config found! Would you like to overwrite and create a backup (~/nvim-back)'
   abort='of course my Neovim config'
-  mv ~/.config/nvim ~/nvim-back
+  rm -r ~/.config/nvim
   git clone https://github.com/flunkyDoge/nvim-config.git ~/.config/nvim
   echo
 else
