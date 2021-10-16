@@ -8,6 +8,7 @@ vim.cmd[[
 		source ~/.config/nvim/general/auto.vim
 		source ~/.config/nvim/keys/mappings.vim
 		source ~/.config/nvim/general/lightline.vim
+		source ~/.config/nvim/general/signify.vim
 	]]
 
 -- Import remaining lua files
