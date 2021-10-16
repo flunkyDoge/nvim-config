@@ -22,7 +22,7 @@ elif test -f '/etc/debian_version'; then
   echo "Package manager detected: apt-get"
   install=$'sudo apt-get install'
   noconfirm=$'-y'
-  sudo apt-get upgrade
+  sudo apt-get update
   echo
 elif test -f '/etc/redhat-release'; then
   echo "Package manager detected: yum"
