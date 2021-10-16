@@ -71,12 +71,15 @@ if test -f '~/.config/nvim'; then
   git clone https://github.com/flunkyDoge/nvim-config.git ~/.config/nvim
   echo
 else
-  echo 'Installing my Neovim config!'
+  echo 'Cloning my Neovim config!'
   abort='of course my Neovim config'
   git clone https://github.com/flunkyDoge/nvim-config.git ~/.config/nvim
+  echo 'Repository successfuly cloned'
   echo
 fi
 
+echo 'Installing plguins for Neovim'
 nvim -c PlugInstall -c q! -c q!
+echo 'Plugins installed!'
 
 echo 'My Neovim config is installed!'
