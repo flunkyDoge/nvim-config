@@ -77,5 +77,10 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('folke/persistence.nvim')
     -- Passwordstore
     Plug('fourjay/vim-password-store')
+    -- Git Integration
+    Plug 'mhinz/vim-signify'
+    Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-rhubarb'
+    Plug 'junegunn/gv.vim'
 
 vim.call('plug#end')
