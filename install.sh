@@ -48,4 +48,4 @@ else
   git clone https://github.com/flunkyDoge/nvim-config.git ~/.config/nvim > /dev/null
 fi
 sleep 0.15
-nvim -c PlugInstall -c q! -c q! > /dev/null
+nvim -c PlugInstall -c q! -c q!
