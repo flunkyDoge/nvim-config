@@ -25,7 +25,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('francoiscabrol/ranger.vim')
     Plug('rbgrouleff/bclose.vim')
     -- Auto pairs for '(' '[' '{'
-    Plug('jiangmiao/auto-pairs')
+    Plug('tpope/vim-surround')
     -- LSP
     Plug('neovim/nvim-lspconfig')
     Plug('glepnir/lspsaga.nvim')
@@ -78,9 +78,14 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     -- Passwordstore
     Plug('fourjay/vim-password-store')
     -- Git Integration
-    Plug 'mhinz/vim-signify'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb'
-    Plug 'junegunn/gv.vim'
+    Plug ('mhinz/vim-signify')
+    Plug ('tpope/vim-fugitive')
+    Plug ('tpope/vim-rhubarb')
+    Plug ('junegunn/gv.vim')
+    Plug ('airblade/vim-gitgutter')
+    -- Line up text
+    Plug ('godlygeek/tabular')
+    -- Show indentation
+    Plug ('Yggdroot/indentLine')
 
 vim.call('plug#end')
