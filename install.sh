@@ -29,6 +29,7 @@ $install $noconfirm git neovim $fd lolcat ranger > /dev/null
 
 # Detects if npm is installed
 if test -f "/usr/bin/npm"; then
+  echo
 else
   $install npm $noconfirm > /dev/null
 fi
