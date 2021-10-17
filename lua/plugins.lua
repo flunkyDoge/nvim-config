@@ -26,6 +26,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('rbgrouleff/bclose.vim')
     -- Auto pairs for '(' '[' '{'
     Plug('tpope/vim-surround')
+    Plug ('tpope/vim-repeat')
     -- LSP
     Plug('neovim/nvim-lspconfig')
     Plug('glepnir/lspsaga.nvim')
@@ -87,5 +88,12 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug ('godlygeek/tabular')
     -- Show indentation
     Plug ('Yggdroot/indentLine')
+    -- Better dates
+    Plug ('tpope/vim-speeddating')
+    -- Better clipboard
+    Plug ('svermeulen/vim-easyclip')
+    -- Numbers and stuff
+    Plug ('glts/vim-radica')
+    Plug ('glts/vim-magnum')
 
 vim.call('plug#end')
