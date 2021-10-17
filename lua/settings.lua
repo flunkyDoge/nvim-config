@@ -41,6 +41,8 @@ vim.cmd [[
 ]]
 set.clipboard = 'unnamedplus'             -- Copy paste between vim and everything else
 set.autochdir = true                      -- Your working directory will always be the same as your working directory
+set.ignorecase = true                     -- Case insensitive search
+set.smartcase = true                      -- Case insensitive when using cases
 
 -- auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 vim.cmd [[
