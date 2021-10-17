@@ -104,11 +104,11 @@ sleep 0.1
 if test -f '~/.config/nvim'; then
   echo -ne 'Nvim config found, deleting
   Progress... [##########################################.........] (82%)\r'
-  rm -r ~/.config/nvim
+  rm -r ~/.config/nvim > /dev/null
   sleep 0.15
   echo -ne 'Nvim config deleted, cloning Nvim config
   Progress... [############################################.......] (86%)\r'
-  git clone https://github.com/flunkyDoge/nvim-config.git ~/.config/nvim
+  git clone https://github.com/flunkyDoge/nvim-config.git ~/.config/nvim > /dev/null
   echo -ne 'Nvim config successfuly cloned
   Progress... [##############################################.....] (90%)\r'
 else
@@ -117,7 +117,7 @@ else
 sleep 0.15
   echo -ne 'Cloning Neovim config 
   Progress... [############################################.......] (86%)\r'
-  git clone https://github.com/flunkyDoge/nvim-config.git ~/.config/nvim
+  git clone https://github.com/flunkyDoge/nvim-config.git ~/.config/nvim > /dev/null
   echo -ne 'Nvim config successfuly cloned
   Progress... [##############################################.....] (90%)\r'
 fi
@@ -127,7 +127,7 @@ Progress... [###############################################....] (92%)\r'
 sleep 0.15
 echo -ne 'Installing plugins for Nvim
 Progress... [################################################...] (94%)\r'
-nvim -c PlugInstall -c q! -c q!
+nvim -c PlugInstall -c q! -c q! > /dev/null
 echo -ne 'Plugins installed!
 Progress... [##################################################.] (98%)\r'
 
