@@ -36,6 +36,10 @@ fi
 # Installs language servers
 sudo npm i pyright bash-language-server > /dev/null
 
+# Install vim-plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
 # Here begins the installation of the actual config
 if test -f "~/.config/nvim"; then
   rm -r ~/.config/nvim > /dev/null
