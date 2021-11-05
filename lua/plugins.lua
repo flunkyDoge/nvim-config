@@ -100,4 +100,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('tpope/vim-dispatch')
     -- Dotnet tools and building and stuffs
     Plug('tmadsen/vim-compiler-plugin-for-dotnet')
+    -- Linter, for better formatting and shit
+    Plug('nathanmsmith/nvim-ale-diagnostic')
+
 vim.call('plug#end')

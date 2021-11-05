@@ -21,6 +21,7 @@ require('colorscheme')
 require('surround')
 
 -- Import the LSP config files
+require('lsp.linter')
 require('lsp.python-lsp')
 require('lsp.lua-lsp')
 require('lsp.bash-lsp')
