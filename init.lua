@@ -9,6 +9,7 @@ vim.cmd[[
 		source ~/.config/nvim/keys/mappings.vim
 		source ~/.config/nvim/general/lightline.vim
 		source ~/.config/nvim/general/signify.vim
+		source ~/.config/nvim/general/sneak.vim
 	]]
 
 -- Import remaining lua files
@@ -17,8 +18,10 @@ require('terminal')
 require('dashboard')
 require('settings')
 require('colorscheme')
+require('surround')
 
 -- Import the LSP config files
 require('lsp.python-lsp')
 require('lsp.lua-lsp')
 require('lsp.bash-lsp')
+require('lsp.csharp-lsp')

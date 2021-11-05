@@ -34,6 +34,7 @@ set.backup = false                        -- This is recommended by coc
 vim.cmd 'set nowritebackup'               -- This is recommended by coc
 set.updatetime = 300                      -- Faster completion
 set.timeoutlen = 500                      -- By default timeoutlen is 1000 ms
+set.hlsearch = true                       -- Better searching
 vim.cmd [[
 	set formatoptions-=r 
 	set formatoptions-=c 
@@ -43,6 +44,11 @@ set.clipboard = 'unnamedplus'             -- Copy paste between vim and everythi
 set.autochdir = true                      -- Your working directory will always be the same as your working directory
 set.ignorecase = true                     -- Case insensitive search
 set.smartcase = true                      -- Case insensitive when using cases
+g.EasyMotion_smartcase = 1              -- Smart casing for EasyMotion 
+g.EasyMotion_use_smartsign_us = 1       -- US layout for SmartCase 
+vim.cmd [[
+	set guioptions+=a
+]]
 
 -- auto source when writing to init.vm alternatively you can run :source $MYVIMRC
 vim.cmd [[
@@ -50,5 +56,6 @@ au! BufWritePost $MYVIMRC source %
 cmap w!! w !sudo tee %
 ]]
 
+vim.cmd [[let g:incsearch#auto_nohlsearch = 1]]
 -- Set bin location for LanguageTool
 g.languagetool_cmd = '/usr/bin/languagetool'

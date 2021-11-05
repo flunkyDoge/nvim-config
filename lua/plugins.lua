@@ -11,7 +11,9 @@ vim.cmd [[
 ]]
 
 vim.call('plug#begin', '~/.config/nvim/plugged')
-
+    
+    -- Better Navigation
+    Plug('easymotion/vim-easymotion')
     -- Better Syntax Support
     Plug('sheerun/vim-polyglot')
     -- File Explorer sidebar
@@ -25,8 +27,9 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('francoiscabrol/ranger.vim')
     Plug('rbgrouleff/bclose.vim')
     -- Auto pairs for '(' '[' '{'
-    Plug('tpope/vim-surround')
-    Plug ('tpope/vim-repeat')
+    Plug('jiangmiao/auto-pairs')
+    -- Surround selected text
+    Plug('blackCauldron7/surround.nvim')
     -- LSP
     Plug('neovim/nvim-lspconfig')
     Plug('glepnir/lspsaga.nvim')
@@ -41,8 +44,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('hrsh7th/cmp-path')
     Plug('ray-x/cmp-treesitter')
     Plug('L3MON4D3/LuaSnip')
-    -- LSP installer
-    Plug('williamboman/nvim-lsp-installer')
     -- Bottom bar, lightline
     Plug('itchyny/lightline.vim')
     Plug('taohexxx/lightline-buffer')
@@ -70,8 +71,11 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('liuchengxu/vim-which-key')
     -- Colour preview for hex codes
     Plug('lilydjwg/colorizer')
-    -- Sneak, better ctrl + F basically
+    -- Better searching
+    Plug('haya14busa/incsearch.vim')
+    Plug('haya14busa/incsearch-easymotion.vim')
     Plug('justinmk/vim-sneak')
+    Plug('haya14busa/incsearch-fuzzy.vim')
     -- Home screen with a bunch of shit
     Plug('glepnir/dashboard-nvim')
     -- Restore session
@@ -79,21 +83,21 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     -- Passwordstore
     Plug('fourjay/vim-password-store')
     -- Git Integration
-    Plug ('mhinz/vim-signify')
-    Plug ('tpope/vim-fugitive')
-    Plug ('tpope/vim-rhubarb')
-    Plug ('junegunn/gv.vim')
-    Plug ('airblade/vim-gitgutter')
+    Plug('mhinz/vim-signify')
+    Plug('tpope/vim-fugitive')
+    Plug('tpope/vim-rhubarb')
+    Plug('junegunn/gv.vim')
+    Plug('airblade/vim-gitgutter')
     -- Line up text
-    Plug ('godlygeek/tabular')
+    Plug('godlygeek/tabular')
     -- Show indentation
-    Plug ('Yggdroot/indentLine')
+    Plug('Yggdroot/indentLine')
     -- Better dates
-    Plug ('tpope/vim-speeddating')
+    Plug('tpope/vim-speeddating')
     -- Better clipboard
-    Plug ('svermeulen/vim-easyclip')
-    -- Numbers and stuff
-    Plug ('glts/vim-radica')
-    Plug ('glts/vim-magnum')
-
+    Plug('svermeulen/vim-easyclip')
+    -- Building in general
+    Plug('tpope/vim-dispatch')
+    -- Dotnet tools and building and stuffs
+    Plug('tmadsen/vim-compiler-plugin-for-dotnet')
 vim.call('plug#end')
