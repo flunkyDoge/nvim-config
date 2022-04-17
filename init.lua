@@ -17,7 +17,7 @@ require('terminal')
 require('dashboard')
 require('settings')
 require('colorscheme')
-require('surround')
+-- require('surround')
 
 -- Import the LSP config files
 -- require('lsp.linter')

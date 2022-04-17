@@ -26,7 +26,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     -- Auto pairs for '(' '[' '{'
     Plug('jiangmiao/auto-pairs')
     -- Surround selected text
-    -- Plug('blackCauldron7/surround.nvim')
+    Plug('blackCauldron7/surround.nvim')
     -- LSP
     Plug('neovim/nvim-lspconfig')
     Plug('glepnir/lspsaga.nvim')
