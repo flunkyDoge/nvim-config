@@ -23,13 +23,10 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('tiagofumo/vim-nerdtree-syntax-highlight')
     Plug('scrooloose/nerdtree-project-plugin')
     Plug('PhilRunninger/nerdtree-visual-selection')
-    -- Ranger Integration
-    Plug('francoiscabrol/ranger.vim')
-    Plug('rbgrouleff/bclose.vim')
     -- Auto pairs for '(' '[' '{'
     Plug('jiangmiao/auto-pairs')
     -- Surround selected text
-    Plug('blackCauldron7/surround.nvim')
+    -- Plug('blackCauldron7/surround.nvim')
     -- LSP
     Plug('neovim/nvim-lspconfig')
     Plug('glepnir/lspsaga.nvim')
@@ -37,6 +34,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('kosayoda/nvim-lightbulb')
     Plug('mfussenegger/nvim-jdtls')
     Plug('mfussenegger/nvim-dap')
+    Plug('williamboman/nvim-lsp-installer')
     -- Autocomplete
     Plug('hrsh7th/cmp-nvim-lsp')
     Plug('hrsh7th/cmp-buffer')
@@ -44,9 +42,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('hrsh7th/cmp-path')
     Plug('ray-x/cmp-treesitter')
     Plug('L3MON4D3/LuaSnip')
-    -- Bottom bar, lightline
-    Plug('itchyny/lightline.vim')
-    Plug('taohexxx/lightline-buffer')
     -- Icons
     Plug('ryanoasis/vim-devicons')
     Plug('kyazdani42/nvim-web-devicons')
@@ -62,9 +57,10 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('nvim-lua/popup.nvim')
     Plug('nvim-telescope/telescope-media-files.nvim')
     Plug('AckslD/nvim-neoclip.lua')
-    -- Themes
+    -- Colourschemes
     Plug('navarasu/onedark.nvim')
     Plug('cocopon/iceberg.vim')
+    Plug('folke/tokyonight.nvim')
     --Terminal Emulator
     Plug('s1n7ax/nvim-terminal')
     -- Command list
@@ -78,8 +74,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('haya14busa/incsearch-fuzzy.vim')
     -- Home screen with a bunch of shit
     Plug('glepnir/dashboard-nvim')
-    -- Restore session
-    Plug('folke/persistence.nvim')
     -- Passwordstore
     Plug('fourjay/vim-password-store')
     -- Git Integration
@@ -102,5 +96,8 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug('tmadsen/vim-compiler-plugin-for-dotnet')
     -- Linter, for better formatting and shit
     Plug('nathanmsmith/nvim-ale-diagnostic')
-
+    -- pywal colourschemes
+    Plug('dylanaraps/wal.vim')
+    -- Lualine, top and bottom bars
+    Plug('nvim-lualine/lualine.nvim')
 vim.call('plug#end')

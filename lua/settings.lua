@@ -32,7 +32,7 @@ set.showtabline = 2                       -- Always show tabs
 vim.cmd 'set noshowmode'                  -- We don't need to see things like -- INSERT -- anymore
 set.backup = false                        -- This is recommended by coc
 vim.cmd 'set nowritebackup'               -- This is recommended by coc
-set.updatetime = 300                      -- Faster completion
+set.updatetime = 100                      -- Faster completion
 set.timeoutlen = 500                      -- By default timeoutlen is 1000 ms
 set.hlsearch = true                       -- Better searching
 vim.cmd [[

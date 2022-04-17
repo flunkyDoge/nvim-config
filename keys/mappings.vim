@@ -1,4 +1,4 @@
-" Better nav for omnicomplete
+"Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
@@ -43,12 +43,6 @@ nnoremap <C-l> <C-w>l
 nnoremap <Leader>o o<Esc>^Da
 nnoremap <Leader>O O<Esc>^Da
 
-" Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-
 " Using Lua functions
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
@@ -84,3 +78,6 @@ map zg/ <Plug>(incsearch-fuzzy-stay)
 
 " Clipboard
 vnoremap <C-c> "+y<CR>
+vnoremap <C-x> "+c"<CR>
+imap <C-a> <esc>0i
+imap <C-e> <esc>$i<right>
