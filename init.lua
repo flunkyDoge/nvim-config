@@ -24,7 +24,7 @@ require('colorscheme')
 require('lsp.python-lsp')
 require('lsp.lua-lsp')
 require('lsp.bash-lsp')
-require('lsp.csharp-lsp')
+-- require('lsp.csharp-lsp')
 
 terminal = require('nvim-terminal').DefaultTerminal;
 
